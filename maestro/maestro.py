@@ -3,7 +3,11 @@
 
 import sys
 
-from maestro_modules import actions, parser, player, dm
+
+from maestro_modules import actions, parser, dm
+from maestro_modules.player import mpd_player
+
+player = mpd_player.MpdPlayer()
 
 tracks = []
 filtered = []
